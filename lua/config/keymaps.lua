@@ -22,3 +22,6 @@ vim.keymap.set("n", "<leader>bd", "<cmd>bdelete<CR>", { desc = "バッファを�
 
 -- バッファ一覧
 vim.keymap.set("n", "<leader>bb", "<cmd>Telescope buffers<CR>", { desc = "バッファ一覧" })
+
+-- Terminalのインサートモードから抜け出す
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])
